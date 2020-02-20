@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bac9015c-f77c-4502-bc5c-0080548a45d0" name="hadoop102" url="http://192.168.134.202">
+        <fileTransfer host="192.168.134.202" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="95616587-b73d-42a0-8813-219958d4b408" name="hadoop103" url="http://192.168.134.203">
+        <fileTransfer host="192.168.134.203" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1c1bb1ec-4bcf-4f2c-9752-f63f9f78ca77" name="hadoop104" url="http://192.168.134.204">
+        <fileTransfer host="192.168.134.204" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

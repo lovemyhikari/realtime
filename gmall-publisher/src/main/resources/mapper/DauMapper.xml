@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--namespace 对应前面定义的接口-->
+<mapper namespace="com.atguigu.dw.gmallpublisher.mapper.DauMapper">
+    <!--对应前面接口中的方法,  标签内写响应的查询语句, 查询的接口会赋值给这个方法的返回值-->
+    <select id="getDau" resultType="java.lang.Long">
+        select count(*) from GMALL_DAU where LOGDATE=#{date }
+    </select>
+
+    <select id="getHourDau" resultMap="dauHourList">
+        select LOGHOUR,count(*) COUNT from GMALL_DAU where LOGDATE=#{date } group by LOGHOUR
+    </select>
+
+    <resultMap id="dauHourList" type="java.util.Map" autoMapping="true"></resultMap>
+    
+</mapper>
